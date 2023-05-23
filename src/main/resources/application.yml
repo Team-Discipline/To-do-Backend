@@ -1,0 +1,18 @@
+server:
+  port: 9191
+spring:
+  datasource:
+    url: ${datasource.url}
+
+    username: ${datasource.id}
+
+    password: ${datasource.password}
+
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  jasypt:
+    encryptor:
+      password: discipline
