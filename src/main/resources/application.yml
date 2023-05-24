@@ -1,14 +1,15 @@
 server:
   port: 9191
 spring:
-  datasource:
-    url: ${datasource.url}
+  spring:
+    datasource:
+      url: ${url}
 
-    username: ${datasource.id}
+      username: ${username}
 
-    password: ${datasource.password}
+      password: ${password}
 
-    driver-class-name: org.mariadb.jdbc.Driver
+      driver-class-name: org.mariadb.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
